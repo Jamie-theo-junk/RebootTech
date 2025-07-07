@@ -1,12 +1,49 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Reboot Tech
+Reboot Tech is a modern web application built with React, aiming to deliver cutting-edge tech solutions. While currently focused on the frontend, plans are underway to integrate a powerful backend with Node.js, Express, MongoDB, and containerized via Docker.
 
-Currently, two official plugins are available:
+## Tech Stack
+#Currently Using:
+-React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Planned Integrations
+- Node.js + Express – Backend API
 
-## Expanding the ESLint configuration
+- MongoDB – Database for dynamic data
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Docker – Containerized development & deployment
+
+## Getting Started
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/reboot-tech.git
+cd reboot-tech
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+3. Run the Development Server
+bash
+Copy
+Edit
+npm run dev
+This will start the React app on http://localhost:5173 (default if you're using Vite).
+
+## Future Plans
+The following features will be added soon:
+
+# Full backend with RESTful API (Node.js + Express)
+
+# Database integration with MongoDB (Atlas or local)
+
+# Docker support for streamlined dev & prod environments
+
+# Authentication and user accounts
+
+# Deployment to platforms like Vercel or Render
+
+## License
+This project is licensed under the MIT License.
