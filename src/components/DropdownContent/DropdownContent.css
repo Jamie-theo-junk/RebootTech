@@ -1,0 +1,19 @@
+.drop-down-content{
+    
+    cursor: pointer;
+    position:absolute;
+    min-width: 100%;
+    display: flex;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: #01894D;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.drop-down-content::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}

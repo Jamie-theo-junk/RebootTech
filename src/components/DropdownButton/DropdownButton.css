@@ -1,0 +1,11 @@
+.dropdown-btn{
+    display: flex;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.toggle-icon{
+    display: flex;
+    align-items: center;
+    margin-left: 1px;
+}

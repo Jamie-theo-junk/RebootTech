@@ -1,0 +1,7 @@
+.dropdrown-item{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.dropdrown-item:hover{
+    color: black;
+}
