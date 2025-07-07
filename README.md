@@ -3,7 +3,7 @@
 Reboot Tech is a modern web application built with React, aiming to deliver cutting-edge tech solutions. While currently focused on the frontend, plans are underway to integrate a powerful backend with Node.js, Express, MongoDB, and containerized via Docker.
 
 ## Tech Stack
-#Currently Using:
+# Currently Using:
 -React
 
 ## Planned Integrations
@@ -18,7 +18,7 @@ Reboot Tech is a modern web application built with React, aiming to deliver cutt
 bash
 Copy
 Edit
-git clone https://github.com/your-username/reboot-tech.git
+git clone https://github.com/Jamie-theo-junk/reboot-tech.git
 cd reboot-tech
 2. Install Dependencies
 bash
