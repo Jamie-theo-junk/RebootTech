@@ -30,7 +30,7 @@ bash
 Copy
 Edit
 npm run dev
-This will start the React app on http://localhost:5173 (default if you're using Vite).
+This will start the React app on http://localhost:5173.
 
 ## Future Plans
 The following features will be added soon:
