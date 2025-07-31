@@ -98,13 +98,13 @@ const navbar = () => {
     ))}
   </div>
 }
-         />
-   <form>
-      <input type="text" placeholder="Search" />
-      <button type="submit">
-        <CgSearch />
-      </button>
-    </form>
+/>
+<form class="search-bar">
+  <input type="text" placeholder="Search..." name="search" />
+  <button type="submit"><CgSearch size={20} color="white" /></button>
+</form>
+
+<h3 className="login">Login/Sign Up</h3>
          
         </nav>
   )
