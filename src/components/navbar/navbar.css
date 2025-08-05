@@ -1,6 +1,5 @@
 *{
     font-family: sans-serif;
-    color: white;
 }
 
 nav{
@@ -9,6 +8,7 @@ nav{
     background-color: #01894D;
     display: flex;
     align-items: center;
+    color: white;
 }
 h1{
     margin-left: 10px; 
