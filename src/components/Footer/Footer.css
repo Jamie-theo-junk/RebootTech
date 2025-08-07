@@ -1,0 +1,10 @@
+footer{
+    height: 250px;
+    background-color: #016539;
+}
+.footer-section {
+  flex: 1;
+  padding: 1rem; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box;
+}

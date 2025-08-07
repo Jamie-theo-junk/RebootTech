@@ -57,4 +57,73 @@ h2{
 }
 .top-seller-section{
     margin: 0 80px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-seller-card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #A6A6A6;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.top-seller-author{
+  align-self: flex-start;
+  margin-left: 10px;
+  
+}
+
+.top-seller-card-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px; 
+  
+}
+
+
+
+.top-seller-card-image {
+  width: 130px;
+  height: 100px;
+  padding: 5px;
+  background-color: #01894D;
+  border-radius: 10px;
+}
+.card-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.about-me-section{
+  background-color: #01894D;
+  height: 400px;
+  display: flex;
+  margin-top: 40px;
+}
+.image-half{
+  width: 39vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.text-half{
+  width: 59vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.link-btns{
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.text-half p{
+  max-width: 80%;
 }
