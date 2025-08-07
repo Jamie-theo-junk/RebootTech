@@ -1,8 +1,8 @@
 # Reboot Tech
 
-![Home Page Screenshot](../RebootTech/src/assets/ScreenShots/homePage.png)
-![Selling Screenshot](../RebootTech/src/assets/ScreenShots/sellingOpens.png)
-![list item Screenshot](../RebootTech/src/assets/ScreenShots/sellingPage.png)
+![Home Page Screenshot](./src/assets/ScreenShots/homePage.png)
+![Selling Screenshot](./src/assets/ScreenShots/sellingOpens.png)
+![list item Screenshot](./src/assets/ScreenShots/sellingPage.png)
 
 
 Reboot Tech is a modern web application built with React, aiming to deliver cutting-edge tech solutions. While currently focused on the frontend, plans are underway to integrate a powerful backend with Node.js, Express, MongoDB, and containerized via Docker.
