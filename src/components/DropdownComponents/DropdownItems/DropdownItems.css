@@ -1,0 +1,15 @@
+.dropdrown-item{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.dropdrown-item:hover{
+    color: black;
+}
+
+.phone-cell {
+  min-width: 150px;
+  text-align: start;
+}
+.phone-cell:hover{
+    color: #03283C;
+}

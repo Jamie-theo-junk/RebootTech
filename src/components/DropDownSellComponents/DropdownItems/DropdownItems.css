@@ -5,3 +5,12 @@
 .dropdrown-item:hover{
     color: black;
 }
+
+.phone-cell_sell {
+  text-align: start;
+  font-size: 16px;
+ 
+}
+.phone-cell:hover{
+    color: #03283C;
+}

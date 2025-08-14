@@ -1,0 +1,18 @@
+.drop-down-content-sell{
+    cursor: pointer;
+    position:absolute;
+    display: flex;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+
+
+.drop-down-content-sell::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
