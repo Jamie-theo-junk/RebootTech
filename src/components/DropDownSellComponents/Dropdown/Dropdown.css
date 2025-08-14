@@ -1,0 +1,48 @@
+.dropdown-sell{
+    position: relative;
+    margin-left: 20px;
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-weight :500;
+    font-size :20px;
+    
+}
+.drop-down-trigger {
+  position: relative;
+  display: inline-block;
+}
+
+
+.drop-down-content-sell {
+    opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  position: absolute;
+  padding: 10px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.drop-down-trigger:hover .drop-down-content-sell {
+  opacity: 1;
+  visibility: visible;
+}
+/* .drop-down-sell-button{
+      width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-weight :500;
+    font-size :20px;
+} */

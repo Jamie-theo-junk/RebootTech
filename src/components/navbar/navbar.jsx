@@ -1,21 +1,29 @@
 import "./navbar.css"
 import rebootTechLogo from '../../assets/rebootLogo.png'
-import Dropdown from "../Dropdown/Dropdown"
-import DropdownItems from "../DropdownItems/DropdownItems"
+import Dropdown from "../DropdownComponents/Dropdown/Dropdown"
+import DropdownItems from "../DropdownComponents/DropdownItems/DropdownItems"
 import { CgSearch } from "react-icons/cg";
+import { useNavigate } from "react-router-dom";
 
 
 const navbar = () => {
+//   const phonesArray = [
+//   ["Iphone 6", "Samsung s10", "Hauwei"],
+//   ["Iphone 7", "Samsung s20", "Oppo"],
+//   ["Iphone 8", "Samsung s21", "Nothing Phone"],
+//   ["Iphone 10", "Samsung s22", "Xaoimi"],
+//   ["Iphone 11", "Samsung s23", ""],
+//   ["Iphone 12", "Samsung s24", ""],
+//   ["Iphone 13", "Samsung a35", ""],
+//   ["Iphone 14", "Samsung a55", ""],
+//   ["All Iphones", " All Samsung", ""]
+// ];
+
+
   const phonesArray = [
-  ["Iphone 6", "Samsung s10", "Hauwei"],
-  ["Iphone 7", "Samsung s20", "Oppo"],
-  ["Iphone 8", "Samsung s21", "Nothing Phone"],
-  ["Iphone 10", "Samsung s22", "Xaoimi"],
-  ["Iphone 11", "Samsung s23", ""],
-  ["Iphone 12", "Samsung s24", ""],
-  ["Iphone 13", "Samsung a35", ""],
-  ["Iphone 14", "Samsung a55", ""],
-  ["All Iphones", " All Samsung", ""]
+  ["Apple", "Hauwei", "All Phones"],
+  ["Samsung", "OnePlus", ""],
+  ["Oppo", "Nothing Phone", ""]
 ];
 
   const ComponentsArray = [
@@ -41,12 +49,16 @@ const navbar = () => {
   
 ];
 
+const navigate = useNavigate();
+const goHome = () =>{
+  navigate("/")
+}
 
   return (
       <nav>
-        <section className="logo-section">
+        <section className="logo-section" onClick={goHome}>
            <img src={rebootTechLogo} className='logo' alt="reboot tech logo" />  
-           <h1>Reboot Tech</h1>   
+           <h1>Reboot Tech</h1> 
            </section>
         <Dropdown 
         id="phones-dropdown"
@@ -56,9 +68,10 @@ const navbar = () => {
     {phonesArray.map((row, rowIndex) => (
       <div className="phone-row" key={rowIndex}>
         {row.map((phone, colIndex) => (
-          <div className="phone-cell" key={colIndex}>
+          <DropdownItems  key={colIndex}
+           onClick={() => navigate(`/searchCategory?search=${phone}`)}>
             {phone || " "}
-          </div>
+          </DropdownItems>
         ))}
       </div>
     ))}
@@ -73,15 +86,16 @@ const navbar = () => {
     {ComponentsArray.map((row, rowIndex) => (
       <div className="phone-row" key={rowIndex}>
         {row.map((phone, colIndex) => (
-          <div className="phone-cell" key={colIndex}>
+          <DropdownItems key={colIndex}
+          onClick={() => navigate(`/searchCategory?search=${phone}`)}>
             {phone || " "}
-          </div>
+          </DropdownItems>
         ))}
       </div>
     ))}
   </div>
-}
-         />
+  }
+  />
 
         <Dropdown 
           buttonText="Desktop&Laptops"
@@ -90,9 +104,10 @@ const navbar = () => {
     {DesktopLaptopArray.map((row, rowIndex) => (
       <div className="phone-row" key={rowIndex}>
         {row.map((phone, colIndex) => (
-          <div className="phone-cell" key={colIndex}>
+          <DropdownItems key={colIndex}
+          onClick={() => navigate(`/searchCategory?search=${phone}`)}>
             {phone || " "}
-          </div>
+          </DropdownItems>
         ))}
       </div>
     ))}
@@ -100,7 +115,7 @@ const navbar = () => {
 }
 />
 <form class="search-bar">
-  <input type="text" placeholder="Search..." name="search" />
+  <input type="text" name="search"/>
   <button type="submit"><CgSearch size={20} color="white" /></button>
 </form>
 

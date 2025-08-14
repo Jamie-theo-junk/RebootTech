@@ -1,0 +1,56 @@
+.sell_middle-section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sell_card{
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-weight :500;
+    font-size :20px;
+}
+.phone{
+    background-color: #F9D464;
+}
+
+.laptop{
+    background-color: #95E67A;
+}
+
+.desktop{
+    background-color: #4FEBBA;
+}
+
+.component{
+    background-color: #DC7BFF;
+}
+.sell_card-dropdown-category{
+   /* border: 2px solid black; */
+   border-radius: 20px;
+   margin: 5px;
+   padding: 5px;
+}
+.sell_card-dropdown{
+    display: flex;
+}
+.sell_card-dropdown h3{
+    margin: 0;
+}
+
+.sell_card-title{
+    /* position: relative;
+    top: -25px;
+
+    padding: 0px;
+    margin: 0;
+    left: 10px;   */
+}
+.sell_card-items{
+    min-width: 150px;
+}

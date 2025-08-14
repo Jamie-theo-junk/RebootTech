@@ -19,6 +19,7 @@ const home = () => {
     axios.get('http://localhost:3000/api/items/recent') 
       .then(response => {
         setRecentListings(response.data);
+        console.log(response.data);
       })
       .catch(error => {
         console.error('Error fetching listings:', error);
@@ -42,13 +43,13 @@ const home = () => {
      <div className="cards-container">
   {recentlistings.map((item) => (
     <div className="card" key={item._id}>
-      <img src={item.imageFile} alt={item.name} className="card-image"/>
-      <h3 className="card-title">{item.name}</h3>
-      <p className="card-price">R{item.price}</p>
-      <p className="card-user"><IoPerson /> {item.author}</p>
-      <p className="card-location"><FaLocationDot />{item.location.Town}, {item.location.City}</p>
-    </div>
-  ))}
+      <img src={item.item.imageFile} alt={item.item.name} className="card-image"/>
+      <h3 className="card-title">{item.item.name}</h3>
+      <p className="card-price">R{item.item.price}</p>
+      <p className="card-user"><IoPerson /> {item.user.name}</p>
+      <p className="card-location">
+           <FaLocationDot /> {item.item.location.city}</p>
+    </div>))}
 </div>
       </section>
       <section className='top-seller-section'>
