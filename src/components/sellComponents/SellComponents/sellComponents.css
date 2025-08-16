@@ -1,0 +1,49 @@
+.sellComponent{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sellComponent_question{
+    margin-top: 20px;
+}
+.sellComponent_question-input{
+    background: #B2B2B2;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+.sellComponent_question-input:focus {
+  outline: 2px solid #01894D; 
+}
+.sellComponent_question-text{
+    color: black;
+    display: flex;
+}
+.sellComponent_title{
+    color: #04273B;
+    margin: 0;
+}
+.sellComponent_detail{
+    color: black;
+}
+.astericks{
+    color: red;
+    align-self: center;
+}
+.sellComponent_question-textarea{
+    background: #B2B2B2;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+}
+.sellComponent_question-textarea:focus {
+  outline: 2px solid #01894D; 
+}

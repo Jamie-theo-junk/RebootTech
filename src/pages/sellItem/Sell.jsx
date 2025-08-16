@@ -6,6 +6,8 @@ import { MdCable } from "react-icons/md";
 import './Sell.css'
 import Dropdown from "../../components/DropDownSellComponents/Dropdown/Dropdown"
 import DropdownItems from "../../components/DropDownSellComponents/DropdownItems/DropdownItems"
+import SellComponent from "../../components/sellComponents/SellComponents/sellComponents"
+import { useState } from "react";
 
 function Sell(){
 const navigate = useNavigate();
@@ -13,6 +15,11 @@ const goHome = () =>{
   navigate("/")
 }
 
+const [sellValue, setSellValue] = useState(["", "", ""]); 
+const onSelectedSell = (value, category, subCategory) => {
+  setSellValue([value, category, subCategory]);
+  console.log({category})
+};
 const appleArray = [
   "iPhone SE",
   "iPhone 15",
@@ -117,8 +124,7 @@ const otherComponents = [
         <div className="sell_card-items">
       {appleArray.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
-
+          onClick={() => onSelectedSell(phone,"Phone", "Iphone")}
         >
           {phone}
         </DropdownItems>
@@ -130,7 +136,7 @@ const otherComponents = [
          
       {androidArray.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
+          onClick={() => onSelectedSell({phone},"Phone", "Android")}
         >
           {phone}
         </DropdownItems>
@@ -146,8 +152,7 @@ const otherComponents = [
         <div className="sell_card-items">
       {miscArray.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
-
+          onClick={() => onSelectedSell({phone},"Phone", "Misc")}
         >
           {phone}
         </DropdownItems>
@@ -176,7 +181,7 @@ content={
         <div className="sell_card-items">
       {laptop.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
+          onClick={() => onSelectedSell({phone},"Laptop", "Windows")}
 
         >
           {phone}
@@ -189,7 +194,7 @@ content={
          
       {appleLaptop.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
+          onClick={() => onSelectedSell({phone},"Laptop", "Apple")}
         >
           {phone}
         </DropdownItems>
@@ -205,8 +210,7 @@ content={
         <div className="sell_card-items">
       {otherLaptop.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
-
+          onClick={() => onSelectedSell({phone},"Laptop", "Others")}
         >
           {phone}
         </DropdownItems>
@@ -235,7 +239,7 @@ content={
         <div className="sell_card-items">
       {desktops.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
+          onClick={() => onSelectedSell({phone},"Desktop", "Windows")}
 
         >
           {phone}
@@ -248,7 +252,7 @@ content={
          
       {otherDesktop.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
+          onClick={() => onSelectedSell({phone},"Desktop", "Other")}
         >
           {phone}
         </DropdownItems>
@@ -279,8 +283,7 @@ content={
         <div className="sell_card-items">
       {cpuComponents.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
-
+          onClick={() => onSelectedSell({phone},"Components", "Cpu")}
         >
           {phone}
         </DropdownItems>
@@ -292,7 +295,7 @@ content={
          <div className="sell_card-items">
       {GraphicComponents.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
+          onClick={() => onSelectedSell({phone},"Components", "Gpu")}
         >
           {phone}
         </DropdownItems>
@@ -307,8 +310,7 @@ content={
         <div className="sell_card-items">
       {otherComponents.map((phone) => (
         <DropdownItems
-          onClick={() => navigate(`/searchCategory?search=${phone}`)}
-
+          onClick={() => onSelectedSell({phone},"Components", "Other")}
         >
           {phone}
         </DropdownItems>
@@ -319,6 +321,13 @@ content={
     </>
   }
             />
+            </section>
+            <section className="sell_bottom-section">
+<SellComponent
+  value={sellValue[0]}
+  category={sellValue[1]}
+  subCategory={sellValue[2]}
+/>
             </section>
         </div>
     );
